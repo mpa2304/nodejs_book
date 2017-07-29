@@ -31,6 +31,9 @@ http.createServer(function(req,res){
 		case '/img/logo.jpg':
 			serveStaticFile(res, '/public/img/logo.jpg', 'image/jpeg');
 		break;
+		case '/img/logo.png':
+			serveStaticFile(res, '/public/img/logo.png', 'image/png');
+		break;
 		default:
 			serveStaticFile(res, '/public/404.html', 'text/html');
 		break;
